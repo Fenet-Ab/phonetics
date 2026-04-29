@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 // Import other sections to centralize them in this component as requested
@@ -190,13 +191,15 @@ export default function PhonicsHomePage() {
                         <PopiCharacter src="/image2.png" delay={0.8} rotateDir={1} />
                     </div>
 
-                    <motion.button
-                        whileHover={{ scale: 1.05, rotate: 1, boxShadow: "0 25px 50px -12px rgba(236, 72, 153, 0.5)" }}
-                        whileTap={{ scale: 0.95 }}
-                        className="px-16 py-7 bg-gradient-to-r from-[#FF4E95] to-[#FF8DC7] text-white text-4xl md:text-5xl font-black rounded-[2.5rem] border-b-[14px] border-[#D81B60] shadow-2xl hover:brightness-110 active:border-b-[4px] active:translate-y-[10px] transition-all"
-                    >
-                        Start NOW!
-                    </motion.button>
+                    <Link href="/register">
+                        <motion.button
+                            whileHover={{ scale: 1.05, rotate: 1, boxShadow: "0 25px 50px -12px rgba(236, 72, 153, 0.5)" }}
+                            whileTap={{ scale: 0.95 }}
+                            className="px-16 py-7 bg-gradient-to-r from-[#FF4E95] to-[#FF8DC7] text-white text-4xl md:text-5xl font-black rounded-[2.5rem] border-b-[14px] border-[#D81B60] shadow-2xl hover:brightness-110 active:border-b-[4px] active:translate-y-[10px] transition-all"
+                        >
+                            Start NOW!
+                        </motion.button>
+                    </Link>
                 </div>
 
             </main>

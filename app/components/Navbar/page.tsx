@@ -53,13 +53,15 @@ const Navbar = () => {
                         >
                             Log In
                         </Link>
-                        <motion.button
-                            whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(236, 72, 153, 0.4)" }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-gradient-to-r from-[#FF4E95] to-[#FF8DC7] text-white px-6 md:px-8 py-3 rounded-xl font-black shadow-lg shadow-pink-100 transition-all text-[14px] md:text-[16px] whitespace-nowrap"
-                        >
-                            TRY FOR FREE
-                        </motion.button>
+                        <Link href="/register">
+                            <motion.button
+                                whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(236, 72, 153, 0.4)" }}
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-gradient-to-r from-[#FF4E95] to-[#FF8DC7] text-white px-6 md:px-8 py-3 rounded-xl font-black shadow-lg shadow-pink-100 transition-all text-[14px] md:text-[16px] whitespace-nowrap"
+                            >
+                                TRY FOR FREE
+                            </motion.button>
+                        </Link>
 
                         {/* Mobile Toggle */}
                         <button
