@@ -7,6 +7,7 @@ import GamesTeaser from "./components/GamesTeaser/page";
 import PhonicsHomePage from "./components/Hero/page";
 import HowItWorks from "./components/HowItWorks/page";
 import SoundBoard from "./components/SoundBoard/page";
+import Landing from "./pages/landing";
 
 export default function Home() {
   useEffect(() => {
@@ -39,12 +40,13 @@ export default function Home() {
 
   return (
     <>
-      <PhonicsHomePage />
+      <Landing />
+      {/* <PhonicsHomePage />
       <SoundBoard />
       <Features />
       <GamesTeaser />
       <HowItWorks />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
